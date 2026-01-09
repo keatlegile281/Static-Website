@@ -10,7 +10,6 @@ d1iooovrtjyoc1.cloudfront.net
 
 ## ✨ Features
 * Performance: 100/100 Lighthouse score (Static hosting).
-* Visuals: Custom HTML5 Canvas "Matrix Rain" background and Glassmorphism UI.
 * Interactivity: Typewriter effect, staggered scroll reveals, and smooth modal transitions.
 * Responsive: Fully optimized for mobile, tablet, and desktop.
 * Security: Served over HTTPS via AWS CloudFront.
