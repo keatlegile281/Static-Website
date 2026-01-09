@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Troubleshooter | PC & Laptop Repair</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+	
+	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22black%22/><text x=%2250%%22 y=%2250%%22 dominant-baseline=%22central%22 text-anchor=%22middle%22 font-size=%2280%22 fill=%22%2300e676%22 font-family=%22monospace%22 font-weight=%22bold%22>&gt;</text></svg>">
+	
+	
+</head>
+<body>
+
+    <nav>
+		<div class="logo terminal-logo">
+			<span class="prompt">&gt;</span> TROUBLESHOOTER<span class="cursor"></span>
+		</div>
+		<ul class="nav-links">
+			<li><a href="#services">Services</a></li>
+			<li><a href="#process">How It Works</a></li>
+			<li><a href="#" id="openContactBtn" class="nav-btn open-form-btn">Book Repair</a></li>
+		</ul>
+	</nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Don't Panic.<br>We Fix Tech.</h1>
+            <p>Expert diagnostics and repair for laptops, desktops, and custom builds. If it has a power button, we can probably fix it.</p>
+            <a href="#contact" class="cta-button">Start Your Repair</a>
+        </div>
+    </header>
+
+    <section id="services" class="container">
+        <h2 class="section-title">System Diagnostics</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>💻 Laptop Repair</h3>
+                <p>Screen replacements, battery swaps, keyboard fixes, and water damage recovery.</p>
+            </div>
+            <div class="card">
+                <h3>🖥️ Desktop & Custom PC</h3>
+                <p>Hardware upgrades, overheating fixes, GPU installation, and custom building.</p>
+            </div>
+            <div class="card">
+                <h3>🦠 Virus Removal</h3>
+                <p>Deep cleaning of malware, spyware, and ransomware. We save your data.</p>
+            </div>
+            <div class="card">
+                <h3>💾 Data Recovery</h3>
+                <p>Hard drive failure? We use advanced tools to recover your lost files.</p>
+            </div>
+        </div>
+    </section>
+	
+	<section id="process" class="container">
+		<h2 class="section-title">How It Works</h2>
+		<div class="grid">
+			<div class="card">
+				<h3>1. Initial Scan</h3>
+				<p>Bring your device in or book a remote session for a deep system diagnostic.</p>
+			</div>
+			<div class="card">
+				<h3>2. Quote & Repair</h3>
+				<p>We provide a flat-rate quote. Upon approval, we begin the repair process immediately.</p>
+			</div>
+			<div class="card">
+				<h3>3. Quality Check</h3>
+				<p>Your system is stress-tested to ensure the hardware and software are 100% stable.</p>
+			</div>
+		</div>
+	</section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Bring It In</h2>
+            <p>Ready to get back online? Visit the shop or call us.</p>
+            
+            <div class="contact-info">
+                <p><strong>📍 Location:</strong> REMOTE</p>
+               <p><strong>📞 Phone:</strong> <span class="allow-copy">+27 76 8733 186</span></p>
+                <p><strong>🕒 Hours:</strong> Mon-Fri: 9am - 6pm</p>
+            </div>
+            <a href="#" class="cta-button outline open-form-btn">Email Us</a>
+            
+        </div>
+		<div id="contactModal" class="modal">
+			<div class="modal-content">
+				<span class="close-btn">&times;</span>
+				<h2><span class="prompt">&gt;</span> Log Your Ticket</h2>
+				
+				<form action="https://formspree.io/f/xbddrrbn" method="POST" id="terminalForm">
+					<div class="form-group">
+						<label for="email"><span class="prompt"></span> Email:</label>
+						<input type="email" id="email" name="email" required placeholder="Enter email address...">
+					</div>
+
+					<div class="form-group">
+						<label for="device"><span class="prompt"></span> Device:</label>
+						<select id="device" name="device" class="terminal-input">
+							<option value="laptop">Laptop</option>
+							<option value="desktop">Desktop / Custom Build</option>
+							<option value="data">Data Recovery Only</option>
+							<option value="other">Other / Not Listed</option>
+						</select>
+					</div>
+
+					<div class="form-group">
+						<label for="message"><span class="prompt"></span> Ticket Details:</label>
+						<textarea id="message" name="message" rows="4" required placeholder="Describe failure..."></textarea>
+					</div>
+
+					<button type="submit" class="cta-button" id="submitBtn">SEND</button>
+				</form>
+			</div>
+		</div>
+    </section>
+	<script src="script.js"></script>
+    <footer>
+        <p>&copy; 2024 Troubleshooter Tech Services.</p>
+    </footer>
+	
+</body>
+</html>
